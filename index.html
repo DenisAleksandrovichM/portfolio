@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>DM portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <p class="logo__text">DM</p>
+            </div>
+
+            <div class="header__box">
+                <p class="header__item">
+                    <a href="tel:+79999999999" class="header__link">+7 (999) 999-99-99</a>
+                </p>
+                <p class="header__item">/</p>
+                <p class="header__item">
+                    <a href="mailto:abc@example.com" class="header__link">abc@example.com</a>
+                </p>
+            </div>
+
+            <img src="./assets/menu_round.svg" alt="menu" id="menuIcon" class="menu__icon">
+            <div id="menuBox" class="menu__box">
+                <ul>
+                    <li class="menu__item"><a href="#intro" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__link">about</a></li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link">skills</a>
+                    </li>
+                    <li class="menu__item"><a href="#works" class="menu__link">works</a></li>
+                    <li class="menu__item">
+                        <a href="#contacts" class="menu__link">contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro" id="intro">
+            <div class="container">
+                <div class="intro__box">
+                    <div class="intro__item intro__item_photo">
+                        <picture>
+                            <source class="intro__photo intro__photo_sm" srcset="./assets/main_photo_1x1.jpg"
+                                media="(max-width: 768px)">
+                            <source class="intro__photo" srcset="./assets/main_photo.jpg"> <img class="intro__photo"
+                                src="./assets/main_photo.jpg" alt="Denis">
+                        </picture>
+                    </div>
+                    <div class="intro__item intro__item_text">
+                        <h1 class="intro__title">
+                            Hey, I’m <span class="accent">Denis</span>
+                        </h1>
+                        <p class="intro__text">
+                            I build databases, API services and server-side programs!
+                        </p>
+                        <a class="intro__link" href="https://t.me/DenisAleksandrovichM">Get in touch
+                            <img class="intro__icon" src="./assets/telegram.svg" alt="telegram"> </a>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link"><img src="./assets/linkedin.svg" alt="linkedin"
+                                    class="social__icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://t.me/DenisAleksandrovichM" class="social__link"><img
+                                    src="./assets/telegram_round.svg" alt="telegram" class="social__icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="mailto:abc@example.com" class="social__link"><img src="./assets/mail-213.svg"
+                                    alt="mail" class="social__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__box">
+                    <h2 class="section__title accent">
+                        About me
+                    </h2>
+
+                    <div class="about__timeline">
+                        <div class="about__line"></div>
+                        <div class="about__item">
+                            <div class="about__bead"></div>
+                            <div class="about__content">
+                                <h3 class="about__name"> 1C </h3>
+                                <p class="about__text">Started as 1C developer I rapidly
+                                    gained expertise and
+                                    confidence
+                                    in coding. In 3 years I became Senior, got a chance to try myself as architect and
+                                    mentor
+                                    for junior co-workers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__bead"></div>
+                            <div class="about__content">
+                                <h3 class="about__name"> Going global </h2>
+                                    <p class="about__text">However, I felt I overgrew local environment and decided to
+                                        get
+                                        acquainted with global
+                                        languages. I started with Java but found Python more appealing due to it
+                                        versatility
+                                        and
+                                        conciseness. Soon enough I discovered Golang and stay true to it by now as it’s
+                                        so
+                                        simple
+                                        and high performing!
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__bead"></div>
+                            <div class="about__content">
+                                <h3 class="about__name"> Go Golang! </h3>
+                                <p class="about__text">Currently I focus on Golang, deepen my expertise and enlarge my
+                                    portfolio. Thanks to my
+                                    career path in 1C I have full understanding of commercial development, architecture
+                                    optimizations, Agile and team-oriented mindset. I believe that this combination of
+                                    skills
+                                    will help me become strong Go Dev.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section__title accent">
+                    Skills
+                </h2>
+            </div>
+        </section>
+
+        <section class="works" id="works">
+            <div class="container">
+                <h2 class="section__title accent">
+                    Works
+                </h2>
+                <div class="works__box">
+                    <div class="works__card">
+                        <img class="card__img" src="./assets/bg_work1.jpg" alt="card-bg">
+                        <div class="card__info">
+                            <h3 class="card__title">API service <br> Go</h3>
+                            <p class="card__desc">Database and API development</p>
+                            <a class="card__link" href="https://github.com/DenisAleksandrovichM/apiservice">See code</a>
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <img class="card__img" src="./assets/bg_work2.jpg" alt="card-bg">
+                        <div class="card__info">
+                            <h3 class="card__title">Telegram bot <br> Python</h3>
+                            <p class="card__desc">TG Bot for marketplace seller stats</p>
+                            <a class="card__link" href="https://github.com/DenisAleksandrovichM/bot">See code</a>
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <img class="card__img" src="./assets/bg_work3.jpg" alt="card-bg">
+                        <div class="card__info">
+                            <h3 class="card__title">Route265 <br> Python, Go</h3>
+                            <p class="card__desc">Contest tasks on algoritms and basics</p>
+                            <a class="card__link"
+                                href="https://github.com/DenisAleksandrovichM/ozon_contest_route256">See code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div>
+                <p class="logo__text footer__logo">DM</p>
+            </div>
+            <div class="footer__content">
+                <div class="contact">
+                    <a class="footer__link" href="https://github.com/DenisAleksandrovichM">
+                        <img class="footer__icon" src="./assets/GitHub-Mark-64px.svg" alt="icon"> GitGub
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <ul class="social__list">
+                        <li class="social__item social__item_first">
+                            <a href="#" class="social__link"><img src="./assets/linkedin.svg" alt="linkedin"
+                                    class="social__icon social__icon_big">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://t.me/DenisAleksandrovichM" class="social__link"><img
+                                    src="./assets/telegram_round.svg" alt="telegram" class="social__icon social__icon_big">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="mailto:abc@example.com" class="social__link"><img src="./assets/mail-213.svg"
+                                    alt="mail" class="social__icon social__icon_big">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="footer__link" href="#intro"> <img class="footer__icon arrow" src="./assets/arrow.svg"
+                        alt="icon"> To top</a>
+                <div class="info">
+                    <p>&copy; 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
