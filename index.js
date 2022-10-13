@@ -1,6 +1,7 @@
 "use strict";
 
 const Chart = require('chart.js');
+Chart.register(ChartDeferred);
 
 // menu
 
@@ -101,6 +102,11 @@ const config = {
   ]},
   options: {
     plugins: {
+      deferred: {
+        xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+        yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+      },
       legend: {
         display: false
       },
@@ -114,13 +120,6 @@ const config = {
       }
     }
   },
-  plugins: {
-    deferred: {
-      xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
-      yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-      delay: 500 
-    }
-  }
 };
 
 const config2 = {
@@ -143,6 +142,11 @@ const config2 = {
   ]},
   options: {
     plugins: {
+      deferred: {
+        xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+        yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+      },
       legend: {
         display: false
       },
@@ -178,6 +182,11 @@ const config3 = {
   ]},
   options: {
     plugins: {
+      deferred: {
+        xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+        yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+      },
       legend: {
         display: false
       },
@@ -213,6 +222,11 @@ const config4 = {
   ]},
   options: {
     plugins: {
+      deferred: {
+        xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+        yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+      },
       legend: {
         display: false
       },
@@ -248,6 +262,11 @@ const config5 = {
   ]},
   options: {
     plugins: {
+      deferred: {
+        xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+        yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+      },
       legend: {
         display: false
       },
