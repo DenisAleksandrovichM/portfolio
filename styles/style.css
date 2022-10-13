@@ -418,12 +418,38 @@ img {
     left: 5%;
     top: 20%;
     transform: translateX(-50%);
-    filter: drop-shadow(1px 1px 3px #800e0b);
+    filter: drop-shadow(1px 1px 3px var(--accent-color));
 }
 
 .show-me:nth-child(n) {
     transform: none;
     opacity: 1;
+}
+
+/* section skills*/
+.charts__box {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.charts__chart {
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(10px 10px 20px #800e0b);
+}
+
+@media screen and (max-width: 515px) {
+    .charts__chart {
+    max-width: 120px;
+    max-height: 120px;
+    margin-bottom: 1rem;
+    }
 }
 
 /* section works */
@@ -681,6 +707,12 @@ img {
 
     .about__content {
         width: calc(50% - 2rem);
+    }
+
+    .charts__chart {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
     }
 
     .works__box {
