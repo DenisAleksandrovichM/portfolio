@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AnnaBegisheva/portfolio#readme",
   "dependencies": {
-    "chart.js": "^3.9.1"
+    "chart.js": "^3.9.1",
+    "chartjs-plugin-deferred": "^2.0.0"
   }
 }
