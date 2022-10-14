@@ -105,7 +105,7 @@ img {
 .menu__box {
     width: 0;
     height: 0;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
@@ -193,9 +193,7 @@ img {
 /* social */
 
 .social {
-    position: absolute;
-    right: 2.2rem;
-    bottom: 0;
+align-self: flex-end;
 }
 
 .social__list {
@@ -224,14 +222,14 @@ img {
 /* intro section */
 
 .intro {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .intro__box {
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -239,7 +237,6 @@ img {
     border-radius: 100%;
     border: 2px solid var(--bg-color);
     box-shadow: 0 0 60px 60px var(--bg-color) inset;
-
 }
 
 .intro__photo {
@@ -305,6 +302,7 @@ img {
     color: var(--secondary-color);
     text-shadow: 0 0 1vw var(--accent-color);
     padding: 15px 20px;
+    margin-bottom: 3rem;
     border: 3px solid var(--accent-color);
     border-radius: 0.75rem;
     box-shadow: 0 0 3vw var(--secondary-color);
@@ -650,9 +648,13 @@ img {
     .intro__item_text {
         margin-top: -10%;
     }
+
+    .intro__box {
+        flex-direction: column;
+    }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
     .logo__text {
         font-size: 50px;
     }
@@ -703,6 +705,11 @@ img {
         padding: 15px 2.5rem;
     }
 
+    .social__icon {
+        width: 50px;
+        height: 50px;
+    }
+
     .about__line,
     .about__line::before,
     .about__line::after,
@@ -742,7 +749,7 @@ img {
 }
 
 /* small screens */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
     .intro__item_text {
         margin-top: -50%;
     }

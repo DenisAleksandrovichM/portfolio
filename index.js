@@ -185,7 +185,7 @@ const config3 = {
       deferred: {
         xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
         yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+        delay: 700      // delay of 500 ms after the canvas is considered inside the viewport
       },
       legend: {
         display: false
@@ -225,7 +225,7 @@ const config4 = {
       deferred: {
         xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
         yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+        delay: 800      // delay of 500 ms after the canvas is considered inside the viewport
       },
       legend: {
         display: false
@@ -265,7 +265,7 @@ const config5 = {
       deferred: {
         xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
         yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-        delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+        delay: 900      // delay of 500 ms after the canvas is considered inside the viewport
       },
       legend: {
         display: false
