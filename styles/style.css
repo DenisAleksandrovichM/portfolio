@@ -243,7 +243,6 @@ align-self: flex-end;
     transform: rotateY(180deg);
     border-radius: 100%;
     position: relative;
-    z-index: -1;
 }
 
 .intro__item_text {
@@ -706,6 +705,7 @@ align-self: flex-end;
 
     .intro__photo {
         border-radius: 0;
+        z-index: -1;
     }
 
     .intro__item_text {
